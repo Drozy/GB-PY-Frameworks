@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block title %} {{ super() }} - {{ title }} {%
+endblock %} {% block content %}
+<table class="table table-bordered">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Имя</th>
+      <th scope="col">Фамилия</th>
+      <th scope="col">Возраст</th>
+      <th scope="col">Средний балл</th>
+    </tr>
+  </thead>
+  {% for student in students %}
+  <tr>
+    <td>{{ student['Имя'] }}</td>
+    <td>{{ student['Фамилия'] }}</td>
+    <td>{{ student['Возраст'] }}</td>
+    <td>{{ student['Средний балл'] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
