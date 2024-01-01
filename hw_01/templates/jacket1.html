@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="media">
+    <img class="mr-3" src="/static/img/green-jacket.jpg" alt="green-jacket">
+    <div class="media-body">
+        <h5 class="mt-0">Зеленая куртка</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam modi qui repellat saepe
+            unde. Et itaque magni possimus quam suscipit tempora unde. Aspernatur fuga iste, numquam odit quisquam
+            tempora ullam!</p>
+        <a class="btn btn-outline-secondary" href="#" role="button">В корзину</a>
+    </div>
+</div>
+{% endblock %}

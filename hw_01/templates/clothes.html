@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="card-deck">
+    <div class="card">
+        <img class="card-img-top" src="/static/img/green-jacket.jpg" alt="green-jacket">
+        <div class="card-body">
+            <h5 class="card-title">Зеленая куртка</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam corporis
+                dolorem doloribus et eveniet laudantium nulla quam quisquam similique?</p>
+            <a class="btn btn-outline-primary" href="/clothes/jacket" role="button">Подробнее</a>
+            <a class="btn btn-outline-secondary" href="#" role="button">В корзину</a>
+        </div>
+
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="/static/img/brown-jacket.jpg" alt="brown-jacket">
+        <div class="card-body">
+            <h5 class="card-title">Коричневая куртка</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem dolore
+                dolorem error facilis itaque nemo repellat sint, vel voluptatem?</p>
+            <a class="btn btn-outline-secondary" href="#" role="button">В корзину</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
