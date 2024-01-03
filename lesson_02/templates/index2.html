@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+<h1>Upload Demo</h1>
+<img src="{{ url_for('static', filename='img/content.png') }}" alt="image" height="300">
+<a class="btn btn-secondary" href="upload">Загрузить файл</a>
+{% endblock %}
