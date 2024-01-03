@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+<h1>Загружаем файл на сервер</h1>
+<hr>
+<form action="upload" method="post" enctype="multipart/form-data">
+    <label for="file">Выберите файл</label>
+    <input type="file" name="file">
+    <br>
+    <input type="submit" value="Загрузить">
+</form>
+{% endblock %}

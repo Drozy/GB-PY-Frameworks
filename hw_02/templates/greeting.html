@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+<h1>Greeting</h1>
+<br>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Привет, {{ username }}!</h5>
+        <hr>
+        <a href="{{ url_for('logout') }}" class="btn btn-primary">Выйти</a>
+    </div>
+</div>
+{% endblock %}

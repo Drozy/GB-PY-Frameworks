@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+<h1>Простой калькулятор</h1>
+<hr>
+<form action="{{ url_for('calc') }}" method="post">
+  <div class="form-group">
+    <label for="number1">Example label</label>
+    <input type="text" class="form-control" name="number1" id="number1" placeholder="Первое число">
+  </div>
+  <div class="form-group">
+    <label for="number2">Example label</label>
+    <input type="text" class="form-control" name="number2" id="number2" placeholder="Второе число">
+  </div>
+  <label class="my-1 mr-2" for="operation">Выберите операцию</label>
+  <select class="custom-select my-1 mr-sm-2" name="operation" id="operation">
+    <option selected>Choose...</option>
+    <option value="1">Сложение</option>
+    <option value="2">Вычитание</option>
+    <option value="3">Умножение</option>
+    <option value="4">Деление</option>
+  </select>
+  <button type="submit" class="btn btn-primary">Вычислить</button>
+</form>
+{% endblock %}

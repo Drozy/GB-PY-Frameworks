@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+<h1>Простой калькулятор</h1>
+<hr>
+<div class="card">
+    <div class="card-header">
+        Результат
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{ num1 }} {{ op }} {{ num2 }} = {{ result }}</h5>
+        <a href="/" class="btn btn-primary">Назад</a>
+    </div>
+</div>
+{% endblock %}
